@@ -5,7 +5,16 @@ from bullet import Bullet
 
 
 def check_keydown_events(event, ai_settings, screen, ship, bullets):
-    """响应按键"""
+    """[summary]
+    
+    Arguments:
+        event {[type]} -- [description]
+        ai_settings {[type]} -- [description]
+        screen {[type]} -- [description]
+        ship {[type]} -- [description]
+        bullets {[type]} -- [description]
+    """
+    
     if event.key == pygame.K_RIGHT:
         ship.moving_right = True
     elif event.key == pygame.K_LEFT:
